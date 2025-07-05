@@ -1,0 +1,90 @@
+pregunta,opcion1,opcion2,opcion3,opcion4,respuesta_correcta,categoria,dificultad,puntaje
+¿En qué año comenzó la Primera Guerra Mundial?,1914,1939,1929,1905,1,Historia,Fácil,10
+¿Quién descubrió América?,Hernán Cortés,Cristóbal Colón,Vasco da Gama,Fernando de Magallanes,2,Historia,Fácil,10
+¿Qué civilización construyó las pirámides?,Mayas,Romano,Egipcios,Griegos,3,Historia,Medio,20
+¿En qué año empezó la guerra de Malvinas?,1980,1820,1982,1986,3,Historia,Medio,20
+¿Cuál fue el tratado que finalizó la Primera Guerra Mundial?,Tratado de París,Tratado de Versalles,Tratado de Roma,Tratado de Viena,2,Historia,Difícil,30
+¿Qué significa 'HTML'?,HyperText Markup Language,HighText Machine Language,Hyperlink and Text Markup Language,None of the above,1,Programación,Fácil,10
+¿Qué lenguaje se usa para la inteligencia artificial?,HTML,Python,CSS,SQL,2,Programación,Fácil,10
+¿Qué símbolo se usa para comentarios en Python?,//,<!--,#,/*,3,Programación,Medio,20
+¿Qué imprime el siguiente código? print(2 * '3'),6,33,333,Error de tipo,2,Programación,Medio,20
+¿Qué es PEP8 en Python?,Un tipo de excepción,Una convención de estilo,Un framework,Un editor de texto,2,Programación,Difícil,30
+¿Cuántos jugadores tiene un equipo de fútbol en cancha?,9,10,11,12,3,Deportes,Fácil,10
+¿En qué deporte se utiliza una raqueta?,Fútbol,Tenis,Básquet,Rugby,2,Deportes,Fácil,10
+¿Qué país ganó el Mundial 2022?,Francia,Brasil,Argentina,Alemania,3,Deportes,Medio,20
+¿En qué año debutó Messi con la selección Argentina?,2005,2006,2010,2003,1,Deportes,Medio,20
+¿Cuántas medallas olímpicas ganó Michael Phelps?,18,20,23,28,4,Deportes,Difícil,30
+¿Cuál fue el emperador que dividió el Imperio Romano?,Nerón,Julio César,Diocleciano,Trajano,3,Historia,Difícil,30
+¿Qué estructura de datos usa llaves en Python?,Lista,Tupla,Conjunto,Diccionario,4,Programación,Difícil,30
+¿En qué año se firmó la Declaración de Independencia Argentina?,1816,1810,1820,1853,1,Historia,Difícil,30
+¿Qué significa 'recursividad' en programación?,Repetición infinita,Llamarse a sí misma,Función con errores,Bucle eterno,2,Programación,Difícil,30
+¿Quién ganó el oro en 100m planos en Río 2016?,Yohan Blake,Tyson Gay,Usain Bolt,Asafa Powell,3,Deportes,Difícil,30
+¿Cuál fue el primer lenguaje de programación de alto nivel?,C,Fortran,Java,Cobol,2,Programación,Difícil,30
+¿Qué selección tiene más medallas olímpicas en básquet?,Argentina,EE.UU.,España,Lituania,2,Deportes,Difícil,30
+¿En qué año cayó el Imperio Romano de Occidente?,395,410,476,500,3,Historia,Difícil,30
+¿Para qué sirve 'lambda' en Python?,Crear clases,Crear listas,Crear funciones anónimas,Crear módulos,3,Programación,Difícil,30
+¿Quién ganó más títulos de Grand Slam en tenis masculino?,Federer,Nadal,Djokovic,Murray,3,Deportes,Difícil,30
+¿Cuál fue la principal causa de la Segunda Guerra Mundial?,Ataque a Pearl Harbor,Invasión de Polonia por Alemania,Revolución Rusa,Bloqueo de Berlín,2,Historia,Medio,20
+¿Qué estructura de control permite decisiones en Python?,while,for,if,def,3,Programación,Medio,20
+¿Qué país organizó el Mundial de Fútbol 2014?,Alemania,Argentina,Brasil,España,3,Deportes,Medio,20
+¿Qué año se fundó GitHub?,2000,2008,2012,2015,2,Programación,Medio,20
+¿Quién fue el dictador austriaco durante la Segunda Guerra Mundial?,Hitler,Mussolini,Napoleón,Churchill,1,Historia,Medio,20
+¿Qué hace el operador '==' en Python?,Asigna valor,Compara igualdad,Multiplica,Resta,2,Programación,Medio,20
+¿Cuántas Copas del Mundo tiene Brasil?,3,4,5,6,3,Deportes,Medio,20
+¿Qué significa IDE?,Internet Data Exchange,Integrated Development Environment,Input Device Emulator,Integrated Debug Engine,2,Programación,Medio,20
+¿Cuál fue la primera civilización en usar escritura?,Romanos,Egipcios,Sumerios,Griegos,3,Historia,Medio,20
+¿Qué equipo ganó la Champions League 2022?,Liverpool,Real Madrid,PSG,Manchester City,2,Deportes,Medio,20
+¿Quién fue el primer presidente de Argentina?,Manuel Belgrano,Bernardino Rivadavia,Juan Manuel de Rosas,Domingo Sarmiento,2,Historia,Fácil,10
+¿Cuál es el planeta más cercano al Sol?,Venus,Marte,Tierra,Mercurio,4,Historia,Fácil,10
+¿Qué es una variable en programación?,Un número,Un carácter,Una caja para almacenar datos,Una fórmula matemática,3,Programación,Fácil,10
+¿Qué extensión tienen los archivos de Python?,.html,.txt,.py,.exe,3,Programación,Fácil,10
+¿Cuál es el deporte más popular del mundo?,Básquet,Tenis,Fútbol,Rugby,3,Deportes,Fácil,10
+¿Con qué parte del cuerpo se golpea el balón en un saque de tenis?,Mano,Pie,Raqueta,Hombro,3,Deportes,Fácil,10
+¿Quién escribió la Constitución Argentina?,San Martín,Belgrano,Alberdi,Rivadavia,3,Historia,Fácil,10
+¿Qué hace el comando print() en Python?,Imprime en papel,Calcula,Repite,Escribe en consola,4,Programación,Fácil,10
+¿Dónde se celebraron los primeros Juegos Olímpicos modernos?,Atenas,París,Tokio,Roma,1,Deportes,Fácil,10
+¿Cuál es la capital de Francia?,Madrid,Roma,París,Londres,3,Historia,Fácil,10
+¿En qué año terminó la Segunda Guerra Mundial?,1945,1939,1942,1950,1,Historia,Fácil,10
+¿Qué civilización habitó Machu Picchu?,Aztecas,Mayas,Incas,Egipcios,3,Historia,Fácil,10
+¿Cuál fue la principal causa de la Primera Guerra Mundial?,Invasión de Polonia,Asesinato del archiduque Francisco Fernando,Ataque a Pearl Harbor,Revolución Rusa,2,Historia,Fácil,10
+¿Quién escribió 'El Príncipe'?,Aristóteles,Platón,Maquiavelo,Sócrates,3,Historia,Fácil,10
+¿Qué lenguaje se usa para páginas web?,Python,C++,HTML,Java,3,Programación,Fácil,10
+¿Qué significa 'CPU'?,Central Processing Unit,Computer Personal Unit,Central Programming Utility,Control Process User,1,Programación,Fácil,10
+¿Qué tipo de dato es 'True' en Python?,Cadena,Entero,Booleano,Lista,3,Programación,Fácil,10
+¿Qué hace la función len() en Python?,Convierte texto,Cuenta elementos,Imprime números,Suma valores,2,Programación,Fácil,10
+¿Qué lenguaje se usa junto con HTML y CSS para dinamismo?,C++,Python,JavaScript,SQL,3,Programación,Fácil,10
+¿En qué deporte se usa un bate?,Fútbol,Béisbol,Tenis,Natación,2,Deportes,Fácil,10
+¿Cuántos puntos vale un gol en fútbol?,1,2,3,5,1,Deportes,Fácil,10
+¿Cuál es el deporte nacional de Argentina?,Rugby,Hockey,Fútbol,Pato,4,Deportes,Fácil,10
+¿Cuántos tiempos tiene un partido de básquet?,2,4,3,1,2,Deportes,Fácil,10
+¿Qué deporte se juega en Wimbledon?,Fútbol,Rugby,Tenis,Golf,3,Deportes,Fácil,10
+¿En qué siglo fue la Revolución Francesa?,XVIII,XIX,XVII,XX,1,Historia,Medio,20
+¿Quién fue el primer emperador romano?,Nerón,Julio César,Augusto,Trajano,3,Historia,Medio,20
+¿Cuál fue la capital del Imperio Bizantino?,Roma,Atenas,Constantinopla,Cartago,3,Historia,Medio,20
+¿Qué guerra enfrentó a norte y sur de EE.UU.?,Guerra de Independencia,Guerra Civil,Guerra Fría,Guerra de Corea,2,Historia,Medio,20
+¿Quién fue Adolf Hitler?,Poeta,Filósofo,Dictador,Rey,3,Historia,Medio,20
+¿Qué es una lista en Python?,Conjunto ordenado,Archivo,Comentario,Ciclo,1,Programación,Medio,20
+¿Cuál es la sintaxis para un ciclo for en Python?,for i to 10,for(i=0;i<10;i++),for i in range(10),loop(10),3,Programación,Medio,20
+¿Qué hace 'input()' en Python?,Muestra texto,Recibe datos del usuario,Calcula valores,Finaliza el programa,2,Programación,Medio,20
+¿Cómo se declara una función en Python?,func,function,def,method,3,Programación,Medio,20
+¿Qué estructura permite almacenar pares clave-valor?,Lista,Tupla,Diccionario,Set,3,Programación,Medio,20
+¿En qué deporte compitió Serena Williams?,Golf,Tenis,Atletismo,Natación,2,Deportes,Medio,20
+¿Qué país ganó más mundiales de fútbol?,Alemania,Argentina,Italia,Brasil,4,Deportes,Medio,20
+¿Dónde se jugaron los Juegos Olímpicos 2008?,Londres,Pekín,Atenas,Sídney,2,Deportes,Medio,20
+¿Quién es considerado el mejor basquetbolista de todos los tiempos?,LeBron James,Kobe Bryant,Michael Jordan,Shaquille O'Neal,3,Deportes,Medio,20
+¿Qué país inventó el judo?,China,Corea,Japón,Tailandia,3,Deportes,Medio,20
+¿Qué rey francés fue ejecutado en la Revolución?,Luis XIV,Luis XVI,Carlos X,Napoleón,2,Historia,Difícil,30
+¿Qué tratado dividió América entre España y Portugal?,Versalles,Tordesillas,Utrecht,Londres,2,Historia,Difícil,30
+¿Quién fue el primer faraón de Egipto?,Ramsés,Tutankamón,Narmer,Cleopatra,3,Historia,Difícil,30
+¿Qué civilización creó el sistema sexagesimal?,Egipcia,Griega,Romana,Sumeria,4,Historia,Difícil,30
+¿Qué guerra duró más de 100 años?,Guerra de Troya,Guerra de los Cien Años,Guerra de Crimea,Guerra Civil Española,2,Historia,Difícil,30
+¿Qué es un decorador en Python?,Un estilo visual,Una función que modifica otra función,Un error,Una librería,2,Programación,Difícil,30
+¿Qué hace el operador 'is' en Python?,Compara valores,Asigna variables,Compara identidad,Suma,3,Programación,Difícil,30
+¿Qué estructura es inmutable?,Lista,Tupla,Set,Diccionario,2,Programación,Difícil,30
+¿Qué biblioteca se usa para ciencia de datos en Python?,pygame,pandas,flask,turtle,2,Programación,Difícil,30
+¿Qué método agrega elementos a una lista?,add(),insert(),append(),put(),3,Programación,Difícil,30
+¿Quién ganó el Mundial de Rugby 2019?,Australia,Sudáfrica,Nueva Zelanda,Inglaterra,2,Deportes,Difícil,30
+¿En qué ciudad se celebraron los JJ.OO. de 1968?,Roma,Tokio,México,Múnich,3,Deportes,Difícil,30
+¿Qué país tiene más medallas olímpicas?,EE.UU.,China,URSS,Alemania,1,Deportes,Difícil,30
+¿Qué futbolista tiene más goles oficiales?,Pelé,Cristiano Ronaldo,Messi,Romario,2,Deportes,Difícil,30
+¿Cuál fue el primer equipo campeón del Mundial?,Italia,Uruguay,Argentina,Brasil,2,Deportes,Difícil,30

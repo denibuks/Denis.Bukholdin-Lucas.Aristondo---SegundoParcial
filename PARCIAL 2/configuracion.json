@@ -1,0 +1,12 @@
+{
+  "Tiempo": 30,
+  "Accesibilidad": "neurotipico",
+  "preguntas_por_categoria": 5,
+  "categorias_a_elegir": 3,
+  "permitir_repetir_preguntas": false,
+  "puntaje_por_dificultad": {
+    "Fácil": 10,
+    "Medio": 20,
+    "Difícil": 30
+  }
+}

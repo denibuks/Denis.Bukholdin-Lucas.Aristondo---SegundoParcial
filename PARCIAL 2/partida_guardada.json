@@ -1,0 +1,18 @@
+{
+  "jugadores": [
+    "DEN",
+    "CAT"
+  ],
+  "resultados": {
+    "DEN": {
+      "aciertos": 5,
+      "porcentaje": 33,
+      "puntaje": 150
+    },
+    "CAT": {
+      "aciertos": 5,
+      "porcentaje": 33,
+      "puntaje": 150
+    }
+  }
+}
