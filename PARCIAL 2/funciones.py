@@ -159,3 +159,43 @@ def jugar_tres_pasadas(preguntas, jugador, configuracion):
         "porcentaje": porcentaje,
         "puntaje": puntaje_total
     }
+def gestionar_jugadores(preguntas, configuracion, max_jugadores=3):
+    jugadores = []
+    resultados = {}
+
+    while len(jugadores) < max_jugadores:
+        jugador = seleccionar_perfil()
+
+        existe = False
+        for j in jugadores:
+            if j == jugador:
+                existe = True
+
+        if existe == True:
+            print("Ese nombre ya fue usado. Elegí otro.")
+            continue
+
+        jugadores.append(jugador)
+        resultado = jugar_tres_pasadas(preguntas, jugador, configuracion)
+        resultados[jugador] = resultado
+
+        if len(jugadores) == max_jugadores:
+            print("\nSe alcanzó el máximo de jugadores.")
+            break
+
+        continuar = input("¿Querés que juegue otro jugador? (S/N): ").strip().upper()
+        while continuar != "S" and continuar != "N":
+            continuar = input("Respuesta inválida. Ingresá S o N: ").strip().upper()
+
+        if continuar == "N":
+            break
+
+    return jugadores, resultados
+
+def mostrar_resultados_finales(jugadores, resultados):
+    print("\nRESULTADOS FINALES")
+    print("Jugador - Aciertos - Porcentaje - Puntaje")
+    print("------------------------------------------")
+    for jugador in jugadores:
+        datos = resultados[jugador]
+        print(f"{jugador} - {datos['aciertos']} - {datos['porcentaje']}% - {datos['puntaje']}")
