@@ -1,12 +1,645 @@
 {
   "Tiempo": 30,
   "Accesibilidad": "neurotipico",
-  "preguntas_por_categoria": 5,
+  "preguntas_por_categoria": 10,
   "categorias_a_elegir": 3,
   "permitir_repetir_preguntas": false,
+  "max_jugadores": 4,
+  "longitud_nombre": 15,
   "puntaje_por_dificultad": {
     "Fácil": 10,
     "Medio": 20,
     "Difícil": 30
+  },
+  "colores_jugadores": {
+    "P1": [
+      0,
+      255,
+      255
+    ],
+    "P2": [
+      255,
+      0,
+      255
+    ],
+    "P3": [
+      50,
+      205,
+      50
+    ],
+    "P4": [
+      255,
+      255,
+      0
+    ]
+  },
+  "tiempo_animacion_ruleta": 3,
+  "efectos_sonido": true,
+  "modo_arcade": true,
+  "colores": {
+    "normal": {
+      "BLANCO": [
+        255,
+        255,
+        255
+      ],
+      "NEGRO": [
+        0,
+        0,
+        0
+      ],
+      "AZUL": [
+        0,
+        100,
+        200
+      ],
+      "AZUL_CLARO": [
+        173,
+        216,
+        230
+      ],
+      "VERDE": [
+        0,
+        150,
+        0
+      ],
+      "VERDE_CLARO": [
+        144,
+        238,
+        144
+      ],
+      "ROJO": [
+        200,
+        0,
+        0
+      ],
+      "ROJO_CLARO": [
+        255,
+        182,
+        193
+      ],
+      "GRIS": [
+        128,
+        128,
+        128
+      ],
+      "GRIS_CLARO": [
+        220,
+        220,
+        220
+      ],
+      "AMARILLO": [
+        255,
+        255,
+        0
+      ],
+      "NARANJA": [
+        255,
+        165,
+        0
+      ],
+      "AZUL_HOVER": [
+        50,
+        150,
+        255
+      ],
+      "VERDE_HOVER": [
+        50,
+        200,
+        50
+      ],
+      "ROJO_HOVER": [
+        255,
+        50,
+        50
+      ],
+      "AMARILLO_HOVER": [
+        255,
+        255,
+        100
+      ],
+      "GRIS_HOVER": [
+        180,
+        180,
+        180
+      ],
+      "BOTON_JUGAR": [
+        80,
+        200,
+        255
+      ],
+      "BOTON_JUGAR_HOVER": [
+        110,
+        230,
+        255
+      ],
+      "BOTON_HISTORIAL": [
+        255,
+        200,
+        0
+      ],
+      "BOTON_HISTORIAL_HOVER": [
+        255,
+        230,
+        50
+      ],
+      "BOTON_ACCESIBILIDAD": [
+        150,
+        100,
+        255
+      ],
+      "BOTON_ACCESIBILIDAD_HOVER": [
+        180,
+        130,
+        255
+      ],
+      "BOTON_SALIR": [
+        255,
+        100,
+        100
+      ],
+      "BOTON_SALIR_HOVER": [
+        255,
+        130,
+        130
+      ],
+      "BOTON_FACIL": [
+        144,
+        238,
+        144
+      ],
+      "BOTON_FACIL_HOVER": [
+        174,
+        255,
+        174
+      ],
+      "BOTON_MEDIO": [
+        255,
+        255,
+        0
+      ],
+      "BOTON_MEDIO_HOVER": [
+        255,
+        255,
+        100
+      ],
+      "BOTON_DIFICIL": [
+        255,
+        182,
+        193
+      ],
+      "BOTON_DIFICIL_HOVER": [
+        255,
+        212,
+        223
+      ],
+      "BOTON_CONTINUAR": [
+        0,
+        150,
+        0
+      ],
+      "BOTON_CONTINUAR_HOVER": [
+        50,
+        200,
+        50
+      ],
+      "BOTON_VOLVER": [
+        128,
+        128,
+        128
+      ],
+      "BOTON_VOLVER_HOVER": [
+        180,
+        180,
+        180
+      ],
+      "OPCION_1": [
+        173,
+        216,
+        230
+      ],
+      "OPCION_2": [
+        144,
+        238,
+        144
+      ],
+      "OPCION_3": [
+        255,
+        255,
+        0
+      ],
+      "OPCION_4": [
+        255,
+        182,
+        193
+      ],
+      "TIEMPO_NORMAL": [
+        0,
+        150,
+        0
+      ],
+      "TIEMPO_ADVERTENCIA": [
+        255,
+        165,
+        0
+      ],
+      "TIEMPO_CRITICO": [
+        200,
+        0,
+        0
+      ],
+      "CORRECTO": [
+        144,
+        238,
+        144
+      ],
+      "INCORRECTO": [
+        255,
+        182,
+        193
+      ],
+      "SOMBRA": [
+        50,
+        50,
+        50
+      ],
+      "OVERLAY": [
+        255,
+        255,
+        255
+      ],
+      "JUGADOR_1": [
+        0,
+        100,
+        200
+      ],
+      "JUGADOR_2": [
+        0,
+        150,
+        0
+      ],
+      "JUGADOR_3": [
+        255,
+        165,
+        0
+      ],
+      "JUGADOR_4": [
+        200,
+        0,
+        0
+      ],
+      "POSICION_1": [
+        255,
+        255,
+        0
+      ],
+      "POSICION_2": [
+        220,
+        220,
+        220
+      ],
+      "POSICION_3": [
+        255,
+        165,
+        0
+      ],
+      "POSICION_4": [
+        0,
+        0,
+        0
+      ],
+      "RULETA_COLOR_1": [
+        144,
+        238,
+        144
+      ],
+      "RULETA_COLOR_2": [
+        255,
+        255,
+        0
+      ],
+      "RULETA_COLOR_3": [
+        255,
+        182,
+        193
+      ],
+      "RULETA_COLOR_4": [
+        173,
+        216,
+        230
+      ],
+      "RULETA_COLOR_5": [
+        255,
+        165,
+        0
+      ],
+      "RULETA_COLOR_6": [
+        220,
+        220,
+        220
+      ]
+    },
+    "daltonico": {
+      "BLANCO": [
+        255,
+        255,
+        255
+      ],
+      "NEGRO": [
+        0,
+        0,
+        0
+      ],
+      "AZUL": [
+        0,
+        100,
+        200
+      ],
+      "AZUL_CLARO": [
+        100,
+        180,
+        255
+      ],
+      "VERDE": [
+        0,
+        150,
+        200
+      ],
+      "VERDE_CLARO": [
+        80,
+        200,
+        255
+      ],
+      "ROJO": [
+        180,
+        100,
+        0
+      ],
+      "ROJO_CLARO": [
+        220,
+        160,
+        80
+      ],
+      "GRIS": [
+        128,
+        128,
+        128
+      ],
+      "GRIS_CLARO": [
+        220,
+        220,
+        220
+      ],
+      "AMARILLO": [
+        255,
+        200,
+        0
+      ],
+      "NARANJA": [
+        200,
+        120,
+        0
+      ],
+      "AZUL_HOVER": [
+        50,
+        150,
+        255
+      ],
+      "VERDE_HOVER": [
+        30,
+        180,
+        255
+      ],
+      "ROJO_HOVER": [
+        220,
+        140,
+        40
+      ],
+      "AMARILLO_HOVER": [
+        255,
+        220,
+        50
+      ],
+      "GRIS_HOVER": [
+        180,
+        180,
+        180
+      ],
+      "BOTON_JUGAR": [
+        0,
+        150,
+        255
+      ],
+      "BOTON_JUGAR_HOVER": [
+        30,
+        180,
+        255
+      ],
+      "BOTON_HISTORIAL": [
+        255,
+        180,
+        0
+      ],
+      "BOTON_HISTORIAL_HOVER": [
+        255,
+        210,
+        50
+      ],
+      "BOTON_ACCESIBILIDAD": [
+        120,
+        80,
+        255
+      ],
+      "BOTON_ACCESIBILIDAD_HOVER": [
+        150,
+        110,
+        255
+      ],
+      "BOTON_SALIR": [
+        220,
+        100,
+        60
+      ],
+      "BOTON_SALIR_HOVER": [
+        250,
+        130,
+        90
+      ],
+      "BOTON_FACIL": [
+        80,
+        200,
+        255
+      ],
+      "BOTON_FACIL_HOVER": [
+        110,
+        230,
+        255
+      ],
+      "BOTON_MEDIO": [
+        255,
+        180,
+        0
+      ],
+      "BOTON_MEDIO_HOVER": [
+        255,
+        210,
+        50
+      ],
+      "BOTON_DIFICIL": [
+        200,
+        140,
+        80
+      ],
+      "BOTON_DIFICIL_HOVER": [
+        230,
+        170,
+        110
+      ],
+      "BOTON_CONTINUAR": [
+        0,
+        150,
+        200
+      ],
+      "BOTON_CONTINUAR_HOVER": [
+        30,
+        180,
+        230
+      ],
+      "BOTON_VOLVER": [
+        128,
+        128,
+        128
+      ],
+      "BOTON_VOLVER_HOVER": [
+        180,
+        180,
+        180
+      ],
+      "OPCION_1": [
+        100,
+        180,
+        255
+      ],
+      "OPCION_2": [
+        80,
+        200,
+        255
+      ],
+      "OPCION_3": [
+        255,
+        200,
+        0
+      ],
+      "OPCION_4": [
+        220,
+        160,
+        80
+      ],
+      "TIEMPO_NORMAL": [
+        0,
+        150,
+        200
+      ],
+      "TIEMPO_ADVERTENCIA": [
+        200,
+        120,
+        0
+      ],
+      "TIEMPO_CRITICO": [
+        180,
+        100,
+        0
+      ],
+      "CORRECTO": [
+        80,
+        200,
+        255
+      ],
+      "INCORRECTO": [
+        220,
+        160,
+        80
+      ],
+      "SOMBRA": [
+        50,
+        50,
+        50
+      ],
+      "OVERLAY": [
+        255,
+        255,
+        255
+      ],
+      "JUGADOR_1": [
+        0,
+        100,
+        200
+      ],
+      "JUGADOR_2": [
+        0,
+        150,
+        200
+      ],
+      "JUGADOR_3": [
+        200,
+        120,
+        0
+      ],
+      "JUGADOR_4": [
+        180,
+        100,
+        0
+      ],
+      "POSICION_1": [
+        255,
+        200,
+        0
+      ],
+      "POSICION_2": [
+        220,
+        220,
+        220
+      ],
+      "POSICION_3": [
+        200,
+        120,
+        0
+      ],
+      "POSICION_4": [
+        0,
+        0,
+        0
+      ],
+      "RULETA_COLOR_1": [
+        80,
+        200,
+        255
+      ],
+      "RULETA_COLOR_2": [
+        255,
+        200,
+        0
+      ],
+      "RULETA_COLOR_3": [
+        220,
+        160,
+        80
+      ],
+      "RULETA_COLOR_4": [
+        100,
+        180,
+        255
+      ],
+      "RULETA_COLOR_5": [
+        200,
+        120,
+        0
+      ],
+      "RULETA_COLOR_6": [
+        220,
+        220,
+        220
+      ]
+    }
   }
 }

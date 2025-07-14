@@ -1,25 +1,39 @@
 import json
+import time
+import os
 
-def cargar_configuracion(path="configuracion.json"):
+
+def cargar_configuracion(path="PARCIAL 2/configuracion.json"):
     try:
         with open(path, "r", encoding="utf-8") as archivo:
-            configuracion = json.load(archivo)
-        return configuracion
+            return json.load(archivo)
     except Exception as e:
-        print("Error al cargar la configuración:", e)
+        print("Error al cargar configuración:", e)
         return {}
+
+def guardar_partida(jugadores, resultados, path="partida_guardada.json"):
+    partida = {
+        "jugadores": jugadores,
+        "resultados": resultados,
+        "fecha": str(time.time())
+    }
+    
+    try:
+        with open(path, "w", encoding="utf-8") as archivo:
+            json.dump(partida, archivo, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print("Error al guardar partida:", e)
 
 def cargar_preguntas_desde_csv(preguntas_csv):
     preguntas = {}
     try:
-        archivo = open(preguntas_csv, "r", encoding="utf-8")
-        lineas = archivo.readlines()
-        archivo.close()
+        with open(preguntas_csv, "r", encoding="utf-8") as archivo:
+            lineas = archivo.readlines()
     except Exception as e:
-        print("Error al leer el archivo CSV:", e)
+        print("Error al leer CSV:", e)
         return {}
 
-    for linea in lineas[1:]: 
+    for linea in lineas[1:]:  
         fila = linea.strip().split(',')
         if len(fila) < 9:
             continue
@@ -31,15 +45,10 @@ def cargar_preguntas_desde_csv(preguntas_csv):
             categoria = fila[6]
             dificultad = fila[7]
             puntaje = int(fila[8])
-        except Exception as e:
-            print("Error al procesar una línea del CSV:", e)
+        except Exception:
             continue
 
-        existe = False
-        for clave in preguntas:
-            if clave == categoria:
-                existe = True
-        if not existe:
+        if categoria not in preguntas:
             preguntas[categoria] = {"Preguntas": []}
 
         preguntas[categoria]["Preguntas"].append({
@@ -52,11 +61,6 @@ def cargar_preguntas_desde_csv(preguntas_csv):
 
     return preguntas
 
-def guardar_partida(jugadores, resultados, path="partida_guardada.json"):
-    partida = {
-        "jugadores": jugadores,
-        "resultados": resultados
-    }
-
-    with open(path, "w", encoding="utf-8") as archivo:
-        json.dump(partida, archivo, ensure_ascii=False, indent=2)
+def obtener_colores(config):
+    modo = "daltonico" if config.get("Accesibilidad") == "daltonico" else "normal"
+    return config.get("colores", {}).get(modo, {})

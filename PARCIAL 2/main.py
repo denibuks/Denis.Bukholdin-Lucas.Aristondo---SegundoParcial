@@ -1,56 +1,78 @@
-from funcionesaux import *
-from configuracion import *
-from funciones import *
-#COSAS PARA IMPLEMENTAR: RULETA, ORDENAR NOMBRES DE JUGADORES ALFABETICAMENTE, TATETI (+50 puntos), RECURSIVIDAD, PYGAME, FUNCION PARA LLAMAR A TODAS LAS FUNCIONES EN EL MAIN
-# =================== JUEGO PRINCIPAL: 3 PASADAS ===================
+# main.py - ARCHIVO PRINCIPAL CON MÚSICA INTEGRADA
 
+import pygame
+import sys
 
-# def gestionar_jugadores(preguntas, configuracion, max_jugadores=3):
-#     jugadores = []
-#     resultados = {}
-
-#     while len(jugadores) < max_jugadores:
-#         jugador = seleccionar_perfil()
-
-#         existe = False
-#         for j in jugadores:
-#             if j == jugador:
-#                 existe = True
-
-#         if existe == True:
-#             print("Ese nombre ya fue usado. Elegí otro.")
-#             continue
-
-#         jugadores.append(jugador)
-#         resultado = jugar_tres_pasadas(preguntas, jugador, configuracion)
-#         resultados[jugador] = resultado
-
-#         if len(jugadores) == max_jugadores:
-#             print("\nSe alcanzó el máximo de jugadores.")
-#             break
-
-#         continuar = input("¿Querés que juegue otro jugador? (S/N): ").strip().upper()
-#         while continuar != "S" and continuar != "N":
-#             continuar = input("Respuesta inválida. Ingresá S o N: ").strip().upper()
-
-#         if continuar == "N":
-#             break
-
-#     return jugadores, resultados
-
-
-# def mostrar_resultados_finales(jugadores, resultados):
-#     print("\nRESULTADOS FINALES")
-#     print("Jugador - Aciertos - Porcentaje - Puntaje")
-#     print("------------------------------------------")
-#     for jugador in jugadores:
-#         datos = resultados[jugador]
-#         print(f"{jugador} - {datos['aciertos']} - {datos['porcentaje']}% - {datos['puntaje']}")
-
-configuracion = cargar_configuracion("PARCIAL 2/configuracion.json")
+def main():
+    """Función principal que inicia el juego con música"""
+    pygame.init()
+    pygame.mixer.init()
+    
+    # Importar módulos
+    import gestores
+    import interfaz
+    import musica  # Tu nuevo sistema de música
+    from configuracion import cargar_configuracion, cargar_preguntas_desde_csv
+    
+    # Cargar configuración
+    config = cargar_configuracion("PARCIAL 2/configuracion.json")
+    
+    # Configurar ventana
+    ventana_config = config.get("interfaz", {}).get("tamaño_ventana", {"ancho": 800, "alto": 600})
+    pantalla = pygame.display.set_mode((ventana_config["ancho"], ventana_config["alto"]))
+    pygame.display.set_caption("Juego de Preguntas")
+    reloj = pygame.time.Clock()
+    
+    # Cargar preguntas
+    ruta_preguntas = config.get("archivos", {}).get("preguntas_csv", "PARCIAL 2/preguntas.csv")
+    preguntas = cargar_preguntas_desde_csv(ruta_preguntas)
+    
+    # ===== INICIALIZAR MÚSICA DE AMBIENTE =====
+    print(" Iniciando música de ambiente...")
+    musica.iniciar_musica_ambiente()
+    
+    # ===== CORREGIR PARTIDAS GUARDADAS =====
+    print("🔧 Verificando partidas guardadas...")
+    gestores.corregir_porcentajes_partida_guardada()
+    
+    # Inicializar estado del juego
+    estado_juego = gestores.crear_estado_inicial(config)
+    estado_interfaz = interfaz.inicializar_interfaz(pantalla)
+    
+    # Loop principal del juego
+    running = True
+    while running:
+        eventos = pygame.event.get()
+        
+        # Manejar eventos de sistema
+        for evento in eventos:
+            if evento.type == pygame.QUIT:
+                running = False
+            elif evento.type == pygame.KEYDOWN:
+                # ===== CONTROLES DE MÚSICA DE AMBIENTE =====
+                if evento.key == pygame.K_F1:  # F1 para pausar/reanudar
+                    musica.alternar_musica()
+                elif evento.key == pygame.K_PLUS or evento.key == pygame.K_EQUALS:  # + subir volumen
+                    musica.subir_volumen()
+                elif evento.key == pygame.K_MINUS:  # - bajar volumen
+                    musica.bajar_volumen()
+        
+        # Procesar estado del juego
+        gestores.procesar_estado(estado_juego, config, preguntas, estado_interfaz, eventos)
+        
+        # Actualizar pantalla
+        pygame.display.flip()
+        reloj.tick(60)
+    
+    # ===== LIMPIAR AL SALIR =====
+    print(" Deteniendo música de ambiente...")
+    musica.limpiar_musica()
+    pygame.quit()
+    sys.exit()
 
 if __name__ == "__main__":
-    preguntas = cargar_preguntas_desde_csv("PARCIAL 2/preguntas.csv")
-    jugadores, resultados = gestionar_jugadores(preguntas, configuracion, max_jugadores=3)
-    mostrar_resultados_finales(jugadores, resultados)
-    guardar_partida(jugadores, resultados)
+    main()
+
+
+
+
